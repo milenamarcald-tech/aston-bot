@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aston Bot Inteligência</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0066CC;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .card {
+      background: white;
+      color: #0066CC;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    button {
+      background: #0066CC;
+      color: white;
+      border: none;
+      padding: 16px 24px;
+      font-size: 18px;
+      border-radius: 12px;
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🤖 Aston Bot</h1>
+  <p>Inteligência Artificial para Opções Binárias</p>
+
+  <div class="card">
+    <p>Seu app já está quase pronto 🚀</p>
+    <p>Em breve: sinais, alertas e análises automáticas.</p>
+    <button onclick="alert('Sinais serão ativados na próxima atualização!')">
+      Ver sinais
+    </button>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
